@@ -1,5 +1,5 @@
-<?php  
-    include "partials/header.php";
+<?php
+    include "_partials/header.php";
 ?>
 <div class="container">
     <div class="row">
@@ -17,12 +17,12 @@
                 <textarea class="form-control" name="message" id="text" rows="3" placeholder="watch this..."></textarea>
             </p>
             <p class="form-group">
-                <button class="btn btn-sm btn-danger" type="submit">add new thing</button>
+                <input class="btn btn-sm btn-danger" type="submit" value="add new thing">
             </p>
         </form>
         
     </div>
 </div>
 <?php  
-    include "partials/footer.php";
+    include "_partials/footer.php";
 ?>

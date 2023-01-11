@@ -1,3 +1,6 @@
+<?php
+    require '_inc/config.php';
+   ?> 
 <!DOCTYPE html>
 <html>
 <head>
