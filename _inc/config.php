@@ -16,6 +16,6 @@ $database = new Medoo([
     'password' => 'root'
 ]);
 
-echo '<pre>';
-print_r( $database->info() );
-echo '</pre>';
+// echo '<pre>';
+// print_r( $database->info() );
+// echo '</pre>';

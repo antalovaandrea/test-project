@@ -6,11 +6,26 @@
         <div class="page-header  mt-3">
                 <h1>VERY MUCH TODO LIST</h1>
         </div>
+
+        <?php
+
+            $data = $database->select('items', 'text');
+            
+            // echo '<pre>';
+            // print_r( $data );
+            // echo '</pre>';
+
+        ?>
+
         <ul class="list-group col-sm-6">
-                <li class="list-group-item">you very much to do this</li>
-                <li class="list-group-item">but also this thing</li>
+                <?php
+
+                    foreach ($data as $item) {
+                        echo '<li class="list-group-item">' . $item . '</li>';
+                    }
+
+                ?>
         </ul>
-        
         
         <form action="add-new.php" class="col-sm-6">
             <p class="form-group">
